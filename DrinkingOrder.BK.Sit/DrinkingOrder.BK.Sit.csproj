@@ -137,6 +137,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Core\Interface\IStoreRepository.cs" />
+    <Compile Include="Models\Core\Service\StoreService.cs" />
+    <Compile Include="Models\DTOs\UpdateStoreRequest.cs" />
+    <Compile Include="Models\Entities\CategoryEntity.cs" />
+    <Compile Include="Models\Entities\OrderEntity.cs" />
+    <Compile Include="Models\Entities\OrderItemEntity.cs" />
+    <Compile Include="Models\Entities\StoreEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -178,7 +185,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+    <Folder Include="Files\" />
+    <Folder Include="Models\Core\Repository\" />
+    <Folder Include="Models\EFModels\" />
+    <Folder Include="Models\Infrastructures\" />
+    <Folder Include="Models\ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
